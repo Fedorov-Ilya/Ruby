@@ -1,0 +1,13 @@
+en:
+  posts:
+    new_post: 'New post'
+    edit_post: 'Edit post'
+    summary: 'Summary'
+    body: 'Body'
+    btn_save: 'Save'
+    btn_edit: 'Edit'
+    btn_delete: 'Delete'
+  navbar:
+    home: 'Home'
+    exit: 'Exit'
+    create_post: 'New post'

@@ -1,0 +1,38 @@
+<%=render 'navbar'%>
+
+<div class='container'>
+    <% if @post.errors.any? %>
+        <div class='alert alert-danger'>
+            <h5><%=t('common.errors')%></h5>
+            <ul>
+                <% @post.errors.full_messages.each do |message|%>
+                    <li><%=message%></li>
+                <%end%>
+            </ul>
+        </div>
+    <%end%>
+</div>
+
+<%= form_for @post, html: {multipart:true} do |f|%>
+<h2 class='h2'><%=I18n.t('posts.new_post')%></h2>
+    <div class="form-group">
+        <%=f.text_field :title,placeholder: "Название статьи",class:"form-control"%>
+    </div>
+
+     <div class="form-group">
+        <%=f.text_field :body,placeholder:I18n.t('posts.summary'),class:"form-control",id:'text1'%>
+    </div>
+
+    <div class="form-group">
+        <%=f.rich_text_area :summary,placeholder: I18n.t('posts.body'),class:"form-control",id:'text2'%>
+    </div>
+
+    <div class="form-group">
+        <%=f.file_field :image%>
+    </div>
+
+    <div class="actions" >
+        <%=f.submit I18n.t('posts.btn_save'),class:"bt btn-dark"%>
+    </div>
+<%end%>
+

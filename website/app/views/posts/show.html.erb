@@ -1,0 +1,20 @@
+<%=render 'navbar'%>
+  
+<div id='show1'>
+        <div class='photo'>
+        <% if @post.image?%>
+            <%=image_tag @post.image.url(:large),id:'img-show' %>
+        <%end%>
+        </div>
+    <div class='product-detail'>
+        <h3 id='h2'><%= @post.title %></h3>
+    </div>
+</div>
+    <div class="container">
+        <p><%= @post.summary%></p>
+    </div>
+<div class='container'>
+  <div class="div1">
+    <%=render 'disqus'%>
+  </div>
+</div>

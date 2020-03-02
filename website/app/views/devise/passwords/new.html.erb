@@ -1,0 +1,24 @@
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<h2>Восстановление пароля</h2>
+
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:"form-control",placeholder: "Email"%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Восстановить",class:"btn btn-dark"%>
+  </div>
+  <div>
+    <p class="link1">Есть аккаунт?
+    <%= link_to 'Вход', new_user_session_path, :method => :get%>
+    </p>
+  </div>
+  <div> 
+    <p class="link1">У вас ещё нет аккаунта? 
+        <%= link_to 'Регистрация', new_user_registration_path, :method => :get%>
+    </p>
+  </div>
+<% end %>
+

@@ -1,0 +1,13 @@
+ru:
+  posts:
+    new_post: 'Новая статья'
+    edit_post: 'Редактировать статию'
+    summary: 'Краткое содержание'
+    body: 'Текст статьи'
+    btn_save: 'Сохранить'
+    btn_edit: 'Редактировать'
+    btn_delete: 'Удалить'
+  navbar:
+    home: 'Главная'
+    exit: 'Выход'
+    create_post: 'Новая статья'

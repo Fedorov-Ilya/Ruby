@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+    background-color:#fafafa;
+}
+.new_user{
+   background-color:#ffffff;
+   border: 0.5px solid #bbbbbb;
+   text-align: center;
+   max-width: 350px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: auto;
+   padding: 10px;
+
+}
+.form-group{
+   margin: 0px 40px 6px;
+}
+.btn{
+   background-color: rgba(var(--h5f,56,151,240),1);
+   border: 1px solid transparent;
+   width: auto;
+   font-weight: 600;
+   color: rgba(var(--eca,255,255,255),1);
+   padding: 5px 9px;
+   font-size: 14px;
+   width: 100%;
+}
+.btn:hover{
+   color: rgba(var(--eca,255,255,255),1);
+}
+.actions{
+   margin-right: 40px;
+   margin-left: 40px;
+
+}
+.link1{
+   display: block;
+   margin-block-start: 0px;
+   margin-block-end: 0px;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+.post,#show1{
+   margin-bottom: 1em;
+   padding: 1em 0;
+   border-bottom: 1px solid lightblue;
+   max-width: 1110px;
+   margin-left: auto;
+   margin-right: auto;
+
+   
+}
+
+.edit_post,.new_post{
+   background-color:#fafafa;
+   max-width: 1110px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: auto;
+   padding: 10px;
+   min-height: 700px;
+   max-height: 700px;
+
+}
+#text1{
+   height:130px;
+}
+#text2{
+   min-height: 300px;
+   height: auto;
+}
+#img-show{
+   float: left;
+   margin: 0 24px 0 0;
+}
+
+.product-detail{
+   height: 286px;
+}
+#h2{
+   line-height: 29px;
+   height: 286px;
+   
+}
+.thumb{
+   float: left;
+   margin-right:1em  ;
+   padding: .0rem;
+}
+.h2{
+   text-align: center;
+}
+.div1{
+   border-bottom: 1px solid lightblue;
+}
+.paginate {
+   margin-left: 630px;
+   margin-right: auto;
+color: #bbbbbb;
+}
